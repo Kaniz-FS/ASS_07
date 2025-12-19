@@ -1,35 +1,72 @@
 import React from 'react';
+import Container from './Container';
+
+
 
 const Footer = () => {
   return (
 
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-  <div>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <footer className=" bg-[#000000] ">
+       <Container>
+   <div className='footer sm:footer-horizontal px-8 py-12 gap-20'>
+  <div className="text-white w-2xs">
+    <h1 className="text-2xl font-bold">CS-Ticket System</h1>
+   <p className='text-white/60 text-[15px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
   </div>
-  <div>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+  <div className="text-white">
+    <h1 className="text-2xl font-bold">Company</h1>
+    <ul className='text-white/60 text-[15px]'>
+        <li>About Us</li>
+        <li>Our Mission</li>
+        <li>Contact Saled</li>
+    </ul>
   </div>
-  <div>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+  
+  <div className="text-white">
+    <h1 className="text-2xl font-bold">Services</h1>
+    <ul className='text-white/60 text-[15px]'>
+        <li>Products & Services</li>
+        <li>Customer Stories</li>
+        <li>Download Apps</li>
+    </ul>
   </div>
-
-<div className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+  <div className="text-white">
+    <h1 className="text-2xl font-bold">Information</h1>
+    <ul className='text-white/60 text-[15px]'>
+                                      
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Join Us</li>
+    </ul>
+    
+  </div>
+  <div className="text-white">
+    <h1 className="text-2xl font-bold">Social Links</h1>
+    <ul className='text-white/60 text-[15px]'>
+        <li>@CS — Ticket System</li>
+        <li>@CS — Ticket System</li>
+        <li>@CS — Ticket System</li>
+        <li>support@cst.com</li>
+    </ul>
+    
+  </div>
   
 </div>
+<div className=''>
+  <hr className="border-0 h-px bg-white/30" />
+
+   
+    <div className="py-6  items-center text-center text-white/60 text-sm">
+      <p>© 2025 CS — Ticket System. All rights reserved.</p>
+      
+    </div>
+</div>
+ 
+
+</Container>
 
  </footer>
+
   );
 };
 

@@ -1,6 +1,7 @@
 
 import React from 'react';
-import Container from './container';
+import Container from './Container';
+
 
 
 const NavBar =()=>{
@@ -8,8 +9,8 @@ const NavBar =()=>{
     
 
   <div className=" bg-base-100 shadow-sm">
-    <Container>
-  <nav className='px-20 py-6.5 flex justify-between item-center'>
+  <Container>
+  <nav className='px-8 py-4 flex justify-between item-center'>
     <h1 className="text-2xl font-semibold">CS — Ticket System</h1>
  
   <div className="flex items-center gap-6">
@@ -24,7 +25,7 @@ const NavBar =()=>{
     <a className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">+ New Ticket</a>
   </div>
   </nav>
-  </Container>
+ </Container>
 </div>
 
 
