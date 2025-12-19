@@ -1,15 +1,19 @@
 // connecting components
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+<<<<<<< HEAD
 import Container from './components/Container';
 import vectorImg from "./assets/vectorF.png"
 
+=======
+>>>>>>> d49f98647d7159136ac108c7792890e0ebd23053
 
 
 function App() {
   return (
     <>
 <NavBar></NavBar>
+<<<<<<< HEAD
 <Container>
   <div className='grid grid-cols-2 gap-6 my-15 px-8'>
     {/* left col */}
@@ -62,6 +66,8 @@ function App() {
   </div>
 </div>
 </Container>
+=======
+>>>>>>> d49f98647d7159136ac108c7792890e0ebd23053
 <Footer></Footer>
     </>
   )
