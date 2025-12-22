@@ -5,22 +5,23 @@ import Footer from './components/Footer';
 import IssuesManagement from './components/IssuesManagement';
 
 import Container from './components/Container';
+import { Suspense } from 'react';
 
-
+const fetchCustomers =async()=>{
+  const resp = await fetch("/CustomerInfo.json")
+  return resp.json()
+}
 
 function App() {
+  const customerPromise = fetchCustomers()
   return (
     <>
 <NavBar></NavBar>
 
-<IssuesManagement></IssuesManagement>
+<Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}npm>
+  <IssuesManagement customerPromise={customerPromise}></IssuesManagement>
 
-{/* card section */}
- <section
-          class="grid grid-cols-1 md:grid-cols-12 gap-5 w-[95%] mx-2 min-h-screen"
-        >
-          
-        </section>
+</Suspense>
 <Footer></Footer>
     </>
   )
