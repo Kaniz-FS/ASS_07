@@ -1,30 +1,32 @@
-import './App.css';
+import "./App.css";
 // connecting components
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import IssuesManagement from './components/IssuesManagement';
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import IssuesManagement from "./components/IssuesManagement";
 
-import Container from './components/Container';
-import { Suspense } from 'react';
+import Container from "./components/Container";
+import { Suspense } from "react";
 
-const fetchCustomers =async()=>{
-  const resp = await fetch("/CustomerInfo.json")
-  return resp.json()
-}
+const fetchCustomers = async () => {
+  const resp = await fetch("/CustomerInfo.json");
+  return resp.json();
+};
 
 function App() {
-  const customerPromise = fetchCustomers()
+  const customerPromise = fetchCustomers();
   return (
     <>
-<NavBar></NavBar>
+      <NavBar></NavBar>
 
-<Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}npm>
-  <IssuesManagement customerPromise={customerPromise}></IssuesManagement>
-
-</Suspense>
-<Footer></Footer>
+      <Suspense
+        fallback={<span className="loading loading-spinner loading-lg"></span>}
+        npm
+      >
+        <IssuesManagement customerPromise={customerPromise}></IssuesManagement>
+      </Suspense>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Container = ({children}) => {
-  return (
-
-    <div className='container max-w-[1440px] mx-auto'>{children}</div>
-
-
-  );
+const Container = ({ children }) => {
+  return <div className="container max-w-[1440px] mx-auto">{children}</div>;
 };
 
 export default Container;

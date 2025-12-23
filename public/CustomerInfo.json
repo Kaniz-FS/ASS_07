@@ -20,7 +20,7 @@
   {
     "id": 1003,
     "title": "Unable to Download Invoice",
-    "description": "Customer cannot download their January invoice from the billing section.",
+    "description": "Customer cannot download their January invoice from the billing section. The download button is...",
     "customer": "Michael Brown",
     "priority": "MEDIUM PRIORITY",
     "status": "In Progress",
@@ -29,7 +29,7 @@
   {
     "id": 1004,
     "title": "Incorrect Billing Address",
-    "description": "Customer reports incorrect billing address on their invoice.",
+    "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
     "customer": "Emily Davis",
     "priority": "LOW PRIORITY",
     "status": "In Progress",
@@ -47,7 +47,7 @@
   {
     "id": 1006,
     "title": "Refund Not Processed",
-    "description": "Refund requested two weeks ago has not been received yet.",
+    "description": "Customer requested a refund two weeks ago but has not received the amount yet.",
     "customer": "Sophia Taylor",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
@@ -74,16 +74,16 @@
   {
     "id": 1009,
     "title": "Subscription Auto-Renewal",
-    "description": "Auto-renewal toggle is disabled and cannot be enabled.",
+    "description": "Customer wants to enable auto-renewal for their subscription but the toggle is disabled.",
     "customer": "Liam Thomas",
     "priority": "MEDIUM PRIORITY",
     "status": "In Progress",
-    "createdAt": "2024-01-17"
+    "createdAt": "2024-01-17"                 
   },
   {
     "id": 1010,
     "title": "Missing Order Confirmation Email",
-    "description": "Order confirmation email not received despite successful payment.",
+    "description": "Customer placed an order but didn't receive a confirmation email even though payment succeeded.",
     "customer": "Isabella Garcia",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
