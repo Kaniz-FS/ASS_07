@@ -23,7 +23,7 @@ function App() {
         npm
       >
         <IssuesManagement customerPromise={customerPromise}></IssuesManagement>
-      </Suspense>
+      </Suspense> 
       <Footer></Footer>
     </>
   );
