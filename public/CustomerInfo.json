@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "title": "Login Issues - Can't Access Account",
-    "description": "Customer is unable to log in to their account even after multiple password reset attempts.",
+    "description": "Customer is unable to log in to their account even after multiple password reset attempts...",
     "customer": "John Smith",
     "priority": "HIGH PRIORITY",
     "status": "Open",
@@ -11,7 +11,7 @@
   {
     "id": 1002,
     "title": "Payment Failed - Card Declined",
-    "description": "Customer attempted to pay using Visa ending 1234 but payment keeps failing despite sufficient balance.",
+    "description": "Customer attempted to pay using Visa ending but payment keeps failing despite sufficient balance.",
     "customer": "Sarah Johnson",
     "priority": "HIGH PRIORITY",
     "status": "Open",

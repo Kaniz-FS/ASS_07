@@ -1,15 +1,28 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import Container from "./Container";
 import vectorImg from "../assets/vectorF.png";
-import Card from './Card'
+import Card from "./Card";
 import CountBox from "./CountBox";
+
 
 const IssuesManagement = ({ customerPromise }) => {
   const customerData = use(customerPromise);
-  console.log(customerData);
+  // console.log(customerData);
+  const [taskStatus, setTaskStatus] = useState([]);
+  const handleCustomer = (customer) => {
+    console.log(customer);
+
+
+    const newTaskStatus = [...taskStatus, customer];
+    setTaskStatus(newTaskStatus);
+  };
+  console.log(taskStatus);
+
   return (
     <Container>
-      <CountBox/>
+    
+      <CountBox taskTotal={taskStatus.length}></CountBox>
+
 
       <section className="grid grid-cols-4  gap-4 mb-8 px-8">
         <div className="col-span-3">
@@ -25,19 +38,27 @@ const IssuesManagement = ({ customerPromise }) => {
 
         <div className="col-span-3 grid rounded-2xl grid-cols-2  gap-4">
           {customerData.map((customer) => (
-           <Card key={customer.id} customer={customer}/>
+            <Card
+              handleCustomer={handleCustomer}
+              key={customer.id}
+              customer={customer}
+            />
           ))}
         </div>
         {/* RIGHT SIDE*/}
 
-        <div className="bg-base-100 p-4 shadow-lg">
-          <h1 className="flex justify-center font-bold text-2xl">Cart</h1>
-          <div className="divider"></div>
-
-          <div className="bg-green-800 p-3 rounded shadow-sm">
-            <h1 className="font-bold text-white text-xl">
-              Total: <span className="font-normal text-lg">0</span>
-            </h1>
+        <div className="space-y-4">
+          <div className="shadow p-2 text-center space-y-3 rounded">
+            <h2 className="font-semibold  text-2xl ">Task Status</h2>
+            <p className="text-[#627382] text-sm mb-3">
+              Select a ticket to add to Task Status
+            </p>
+          </div>
+          <div className="shadow p-2 space-y-3  text-center rounded">
+            <h2 className="font-semibold  text-2xl ">Resolve Task</h2>
+            <p className="text-[#627382] text-sm mb-3">
+              No resolved tasks yet.
+            </p>
           </div>
         </div>
       </section>

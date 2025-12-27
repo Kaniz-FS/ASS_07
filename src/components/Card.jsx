@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Card = ({customer}) => {
+const Card = ({customer, handleCustomer}) => {
+ 
   return (
-     <div className="rounded-md cursor-pointer  bg-base-100 p-4 shadow">
+     <div onClick={()=>handleCustomer(customer)} className="rounded-md cursor-pointer  bg-base-100 p-4 shadow">
               <div className="flex justify-between text-sm     items-center">
                 <h2 className="card-title text-[18px] text-[#001931]">
                   {customer.title}

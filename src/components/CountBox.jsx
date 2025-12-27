@@ -2,7 +2,7 @@ import React from 'react';
 import vectorImg from "../assets/vectorF.png";
 
 
-const CountBox = () => {
+const CountBox = ({taskTotal}) => {
   return (
     <section className="grid grid-cols-2 gap-6 my-16 px-8">
         {/* left col */}
@@ -25,7 +25,7 @@ const CountBox = () => {
           {/* text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center z-30 text-white">
             <h2 className="font-semibold text-3xl">In-Progress</h2>
-            <p className="font-semibold text-2xl">0</p>
+            <p className="font-semibold text-2xl">{taskTotal}</p>
           </div>
         </div>
         {/* right col */}
