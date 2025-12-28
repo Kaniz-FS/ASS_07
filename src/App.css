@@ -1,0 +1,29 @@
+/* Toast container */
+.Toastify__toast--success {
+  background-color: #ffffff !important;
+  color: #627382 !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Toast body */
+.Toastify__toast-body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Progress bar*/
+.Toastify__toast--success .Toastify__progress-bar {
+  background-color: #02a53b !important;
+  height: 4px;
+}
+.Toastify__close-button {
+  color: #627382 !important;
+  opacity: 1 !important;
+}
+
+/* tick icon */
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: #02a53b !important;
+}
