@@ -51,14 +51,13 @@ const IssuesManagement = ({ customerPromise }) => {
             Customer Tickets
           </h2>
         </div>
-       
+
         <div className="hidden lg:block lg:col-span-1">
           <h2 className="text-[#34485A] font-semibold text-2xl md:text-4xl">
             Task Status
           </h2>
         </div>
 
-      
         <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
           {customers.map((customer) => (
             <Card
@@ -75,7 +74,7 @@ const IssuesManagement = ({ customerPromise }) => {
           <h2 className="block lg:hidden text-[#34485A] font-semibold text-2xl">
             Task Status
           </h2>
-          
+
           <div className="shadow bg-base-100 p-3 text-center space-y-3 rounded">
             <h2 className="font-semibold text-xl md:text-2xl">Task Status</h2>
 
