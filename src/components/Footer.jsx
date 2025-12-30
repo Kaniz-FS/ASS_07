@@ -3,10 +3,11 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#000000] ">
+    <footer className="bg-[#000000]">
       <Container>
-        <div className="footer sm:footer-horizontal px-8 py-12 gap-20">
-          <div className="text-white w-2xs">
+        <div className="footer sm:footer-horizontal px-4 sm:px-8 py-12 gap-10 sm:gap-20">
+          
+          <div className="text-white max-w-xs">
             <h1 className="text-2xl font-bold">CS-Ticket System</h1>
             <p className="text-white/60 text-[15px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -15,6 +16,7 @@ const Footer = () => {
               type and scrambled it to make a type specimen book.
             </p>
           </div>
+
           <div className="text-white">
             <h1 className="text-2xl font-bold">Company</h1>
             <ul className="text-white/60 text-[15px]">
@@ -32,6 +34,7 @@ const Footer = () => {
               <li>Download Apps</li>
             </ul>
           </div>
+
           <div className="text-white">
             <h1 className="text-2xl font-bold">Information</h1>
             <ul className="text-white/60 text-[15px]">
@@ -40,22 +43,38 @@ const Footer = () => {
               <li>Join Us</li>
             </ul>
           </div>
+
           <div className="text-white">
             <h1 className="text-2xl font-bold">Social Links</h1>
-            <ul className="text-white/60 text-[15px]">
-              <li>@CS — Ticket System</li>
-              <li>@CS — Ticket System</li>
-              <li>@CS — Ticket System</li>
-              <li>support@cst.com</li>
+
+            <ul className="text-white/60 text-[15px] space-y-2 mt-3">
+              <li className="flex items-center gap-3 hover:text-white cursor-pointer">
+                <i className="fa-brands fa-facebook"></i>
+                @CS — Ticket System
+              </li>
+
+              <li className="flex items-center gap-3 hover:text-white cursor-pointer">
+                <i className="fa-brands fa-twitter"></i>
+                @CS — Ticket System
+              </li>
+
+              <li className="flex items-center gap-3 hover:text-white cursor-pointer">
+                <i className="fa-brands fa-instagram"></i>
+                @CS — Ticket System
+              </li>
+
+              <li className="flex items-center gap-3 hover:text-white cursor-pointer">
+                <i className="fa-solid fa-envelope"></i>
+                support@cst.com
+              </li>
             </ul>
           </div>
         </div>
-        <div className="">
-          <hr className="border-0 h-px bg-white/30" />
 
-          <div className="py-6  items-center text-center text-white/60 text-sm">
-            <p>© 2025 CS — Ticket System. All rights reserved.</p>
-          </div>
+        <hr className="border-0 h-px bg-white/30" />
+
+        <div className="py-6 text-center text-white/60 text-sm">
+          © 2025 CS — Ticket System. All rights reserved.
         </div>
       </Container>
     </footer>
